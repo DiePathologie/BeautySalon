@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "gPkhDLn+2bobPwy3dwpsNAyfDnZMuNbqiU0fZUybvjCZXZaeZXm+Mk4Kv6Eb6AYhIjXTyiw83sssjX1FmB7Xbg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Terry\\Downloads\\BeautySalon\\Data\\BeautyBooking.Data.Common\\BeautyBooking.Data.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Terry\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Terry\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Terry\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.164\\stylecop.analyzers.1.2.0-beta.164.nupkg.sha512",
+    "C:\\Users\\Terry\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.164\\stylecop.analyzers.unstable.1.2.0.164.nupkg.sha512",
+    "C:\\Users\\Terry\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

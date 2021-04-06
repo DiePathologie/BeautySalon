@@ -1,0 +1,11 @@
+﻿@model BeautyBooking.Web.ViewModels.Salons.SalonsListViewModel
+@{
+    this.ViewData["Title"] = "Панель управления для менеджеров";
+}
+
+<h3>Добро пожаловать в панель управления для менеджеров!</h3>
+<p>Список салонов представлен ниже</p>
+
+<div>
+    @await Component.InvokeAsync("SalonsSimpleList")
+</div>

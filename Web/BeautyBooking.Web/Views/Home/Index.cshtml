@@ -1,0 +1,109 @@
+﻿
+@model BeautyBooking.Web.ViewModels.Home.IndexViewModel
+@{ this.ViewData["Title"] = "Главная страница"; }
+
+<hr class="bg-dark mx-4" style="height: 6px;" />
+
+<div class="departments">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <div class="section_title">Мы готовы предоставить вам</div>
+                <div class="section_subtitle">разнообразие услуг</div>
+            </div>
+        </div>
+        <div class="row dept_row">
+            <div class="col">
+                <div class="dept_slider_container_outer">
+                    <div class="dept_slider_container">
+
+                        <!-- Slider -->
+                        <div class="owl-carousel owl-theme dept_slider">
+
+                            @foreach (var category in Model.Categories)
+                            {<!-- Slide -->
+                                <div class="owl-item dept_item">
+                                    <div class="dept_image"><img src="@category.ImageUrl" alt=""></div>
+                                    <div class="dept_content">
+                                        <div class="dept_title">@category.Name</div>
+                                        <div class="dept_link"><a>@category.Description</a></div>
+                                    </div>
+                                </div>}
+
+                        </div>
+                    </div>
+                    <!-- Dept Slider Nav -->
+                    <div class="dept_slider_nav"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="button services_button ml-auto mr-auto">
+                    <a asp-area="" asp-controller="Categories" asp-action="Index"><span>Подробнее</span><span>Подробнее</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="bg-dark mx-4" style="height: 6px;" />
+
+<!-- FAQ & News -->
+
+<div class="stuff">
+    <div class="container">
+        <div class="row">
+
+            <!-- FAQ -->
+            <div class="col-lg-7 align-items-center">
+                <div class="faq">
+                    <div class="faq_title">О нашем приложении</div>
+                    <div class="elements_accordions">
+                        <div class="accordions">
+
+                            <div class="accordion_container">
+                                <div class="accordion d-flex flex-row align-items-center active"><div>Что это за сайт?</div></div>
+                                <div class="accordion_panel">
+                                    <div>
+                                        <p>
+                                            Наше приложение отличная платформа для записи в салоны красоты
+                                            нашей сети. Парикмахерские услуги, студии маникюра, эпиляция.
+                                            На эти и другие услуги вы можеет записаться прямо сейчас.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion_container">
+                                <div class="accordion d-flex flex-row align-items-center"><div>Как использовать вашими услугами?</div></div>
+                                <div class="accordion_panel">
+                                    <div>
+                                        <p>
+                                            Для этого вам нужно зарегистрироваться в системеи войти в свою учетную запись.
+                                            Далее вы сможете записаться на услуги всего за 3 шага:
+                                            Выберите салон, укажите желаемую услугу далее выберите желаемый день и время посещения.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion_container">
+                                <div class="accordion d-flex flex-row align-items-center"><div> Спасибо, что выбрали нас. </div></div>
+                                <div class="accordion_panel">
+                                    <div>
+                                        <p>
+                                           Надеемся вам понравится наше приложение. Удачи!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="bg-dark mx-4" style="height: 6px;" />
